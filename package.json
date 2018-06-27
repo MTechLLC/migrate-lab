@@ -28,18 +28,18 @@
     "socket.io": "^1.4.8"
   },
   "devDependencies": {
-    "grunt": "~1.0.1",
-    "grunt-autoprefixer": "~3.0.3",
-    "grunt-contrib-connect": "~0.11.2",
-    "grunt-contrib-cssmin": "~0.14.0",
-    "grunt-contrib-jshint": "~0.11.3",
-    "grunt-contrib-qunit": "~1.2.0",
-    "grunt-contrib-uglify": "~0.9.2",
-    "grunt-contrib-watch": "~1.0.0",
-    "grunt-sass": "~1.2.0",
-    "grunt-retire": "~0.3.10",
+    "grunt": "~1",
+    "grunt-autoprefixer": "~3",
+    "grunt-contrib-connect": "~1",
+    "grunt-contrib-cssmin": "~2",
+    "grunt-contrib-jshint": "~1",
+    "grunt-contrib-qunit": "~2",
+    "grunt-contrib-uglify": "~3",
+    "grunt-contrib-watch": "~1",
+    "grunt-sass": "~3",
+    "grunt-retire": "~1",
     "grunt-zip": "~0.17.1",
-    "node-sass": "~3.13.0"
+    "node-sass": "~4"
   },
   "license": "MIT"
 }

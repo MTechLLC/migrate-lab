@@ -1,6 +1,6 @@
 <!-- .slide: class="center" -->
-# Migrate Tutorial
-## Lab
+# Migrate Training
+## + Hands-on lab
 
  - Lucas Hedding (heddn)
 
@@ -67,7 +67,7 @@ SQL is in core, the rest are in contrib.
     - entity_lookup or entity_generate
  
 Note:
- - The full list of re-usable plugins in core (and several in contrib) are at: https://www.drupal.org/docs/8/api/migrate-api/migrate-process/migrate-process-overview
+ - The full list of re-usable plugins in core (and several in contrib) can be found at: https://www.drupal.org/docs/8/api/migrate-api/migrate-process/migrate-process-overview
 - The last one, plus several others are in Migrate Plus
 
 
@@ -109,27 +109,31 @@ Note:
   - migrate_plus
     - Store migration as config entities
     - Import from JSON / XML
+    - Several non-core but still useful process plugins
   - migrate_tools
     - Run migrations from command line (drush)
     - Run migrations from web UI
   - migrate_source_csv
     - Import CSV data
   - wordpress_migrate
+  - commerce_migrate
 
 Note:
  - Other source plugins exist in contrib, but these are the most popular.
-- Of other note for running migrations: migrate_manifest
+- Of other note for running migrations: migrate_manifest, migrate_run
 
 
 
 <!-- .slide: class="align-left" -->
 ## Workflow
 
- - Create the config, only run a few? or,
- - Export the config
+ - Create the config
+ - Import the config
+ - Run the config
  - Modify the config
  - Import the new config
  - Run the config
+ - Rinse & repeat as necessary
 
 
 
@@ -313,7 +317,7 @@ Or run only a single migration:
 
 Now import!
 
-    # drush mi animals
+    # drush mi omdb_json
     Processed 4 items (10 created, 0 updated, 0 failed, 0 ignored) - done    [status]
     with 'omdb_json'
 
